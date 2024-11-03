@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Secret Access</title>
+  <script>
+    function checkCode() {
+      const code = document.getElementById("codeInput").value;
+      if (code === "efremontst") {
+        window.location.href = "kaaba.html";
+      } else {
+        alert("Incorrect code. Try again.");
+      }
+    }
+  </script>
+</head>
+<body>
+  <h1>ZHOFRPH WR UDFNWRQ</h1> <!-- "WELCOME TO RACKTON" in Caesar Cipher with a shift of 3 -->
+  <p>Enter the code to proceed:</p>
+  <input type="text" id="codeInput" placeholder="Enter code here">
+  <button onclick="checkCode()">Submit</button>
+</body>
+</html>
